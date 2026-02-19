@@ -3,7 +3,7 @@ logging-to-file = true
 parallel-jobs = 1
 
 [Youtube-Rina]
-enabled = false
+enabled = true
 build-mode = "both"
 module-prop-name = "youtube-rina"
 exclusive-patches = true
