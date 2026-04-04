@@ -12,16 +12,8 @@ rv-brand = "Rina"
 module-prop-name = "youtube-rina"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-included-patches = """\
-    'Custom branding' 'Seekbar' 'Remove background playback restrictions' \
-    'Video ads' 'Hide ads' 'Video Quality' 'Theme' 'Change form factor' \
-    'Return Youtube Dislike' 'Miniplayer' 'SponsorBlock' \
-    """
 patcher-args = """\
-    -e 'Change header' -Ocustom=./assets/rina/header/ \
-    -e 'Custom branding' -OcustomName='RinaTube' -OcustomIcon=./assets/rina/icon/ \
-    -e 'Theme' -OdarkThemeBackgroundColor=#FF290025 -OlightThemeBackgroundColor=#FFFCCFF3 \
-    -e 'Hide Shorts components' -OhideShortsAppShortcut=true -OhideShortsWidget=true \
+    --options-file assets/rina/patches.json --options-update \
     """
 
 [Music-Rina]
@@ -35,8 +27,7 @@ arch = "arm64-v8a" # rip compatibility
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 patcher-args = """\
-    -e 'Theme' -OdarkThemeBackgroundColor=#FF290025 \
-    -e 'Custom branding' -OcustomName=RinaMusic -OcustomIcon=./assets/rina-music/icon/ \
+    --options-file assets/rina-music/patches.json --options-update \
     """
 
 [YouTube-Miku]
@@ -49,16 +40,8 @@ rv-brand = "Miku"
 module-prop-name = "youtube-miku"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-included-patches = """\
-    'Custom branding' 'Seekbar' 'Remove background playback restrictions' \
-    'Video ads' 'Hide ads' 'Video Quality' 'Theme' 'Change form factor' \
-    'Return Youtube Dislike' 'Miniplayer' 'SponsorBlock' \
-    """
 patcher-args = """\
-    -e 'Change header' -Ocustom=./assets/miku/header/ \
-    -e 'Custom branding' -OcustomName='MikuTube' -OcustomIcon=./assets/miku/icon/ \
-    -e 'Theme' -OdarkThemeBackgroundColor=#FF001E1C -OlightThemeBackgroundColor=#FFecf1fd \
-    -e 'Hide Shorts components' -OhideShortsAppShortcut=true -OhideShortsWidget=true \
+    --options-file assets/miku/patches.json --options-update \
     """
 
 [Music-Miku]
@@ -72,6 +55,5 @@ arch = "arm64-v8a" # rip compatibility
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 patcher-args = """\
-    -e 'Theme' -OdarkThemeBackgroundColor=#FF001E1C \
-    -e 'Custom branding' -OcustomName=MikuMusic -OcustomIcon=./assets/miku-music/icon/ \
+    --options-file assets/miku-music/patches.json --options-update \
     """

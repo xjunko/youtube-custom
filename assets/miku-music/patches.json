@@ -43,14 +43,14 @@
             "Custom branding": {
                 "enabled": true,
                 "options": {
-                    "customName": "MikuTube",
-                    "customIcon": "./assets/miku/icon/"
+                    "customName": "MikuMusic",
+                    "customIcon": "./assets/miku-music/icon/"
                 }
             },
             "Change header": {
-                "enabled": true,
+                "enabled": false,
                 "options": {
-                    "custom": "./assets/miku/header/"
+                    "custom": "./assets/miku-music/header/"
                 }
             },
             "Hide buttons": {
