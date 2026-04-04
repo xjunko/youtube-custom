@@ -38,7 +38,8 @@ def _header(folder: Path) -> int:
         "morphe_header_custom",
     ]
     files: list[str] = [
-        "header_dark.png", "header_light.png",
+        "header_dark.png",
+        "header_light.png",
     ]
 
     destination: Path = TARGET_ASSETS / folder.stem / "header"
@@ -85,7 +86,7 @@ def _icon(folder: Path) -> int:
     variations: list[str] = [
         "revanced_adaptive_{}_custom.png",
         "adaptiveproduct_youtube_{}_color_108.png",
-        "morphe_adaptive_{}_custom.png"
+        "morphe_adaptive_{}_custom.png",
     ]
     variations_foreground: list[str] = [
         "ic_launcher_round.png",
