@@ -35,8 +35,11 @@ def _header(folder: Path) -> int:
         "custom_header",
         "yt_wordmark_header",
         "yt_premium_wordmark_header",
+        "morphe_header_custom",
     ]
-    files: list[str] = ["header_dark.png", "header_light.png"]
+    files: list[str] = [
+        "header_dark.png", "header_light.png",
+    ]
 
     destination: Path = TARGET_ASSETS / folder.stem / "header"
     destination.mkdir(exist_ok=True, parents=True)
@@ -82,6 +85,7 @@ def _icon(folder: Path) -> int:
     variations: list[str] = [
         "revanced_adaptive_{}_custom.png",
         "adaptiveproduct_youtube_{}_color_108.png",
+        "morphe_adaptive_{}_custom.png"
     ]
     variations_foreground: list[str] = [
         "ic_launcher_round.png",
