@@ -17,7 +17,7 @@ patcher-args = """\
     """
 
 [Music-Rina]
-enabled = false
+enabled = true
 build-mode = "both"
 patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
@@ -45,7 +45,7 @@ patcher-args = """\
     """
 
 [Music-Miku]
-enabled = false
+enabled = true
 build-mode = "both"
 patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
